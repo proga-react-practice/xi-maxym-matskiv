@@ -34,22 +34,15 @@ export const CHECK_AND_RADIO: CROptions[] = [
     input_Type: 'radio',
     name:'type',
     value:['NPC', 'Neural Network', 'Function'],
-  },
-//   {
-// //    className:  'checkbox-group',
-// //     type: 'checkbox',
-// //     name:'level',
-//     value:'Very High',
-//   },
+  }
 ];
-
 export const RANGE: ROptions[] = [
     {
         label: 'Rate AI Intelligence:',
         class_Name: 'range-container',
         name: 'rating',
         min: 1,
-        max: 10,
-        value: 3,
+        max: 100,
+        value: 1,
     },
     ];
