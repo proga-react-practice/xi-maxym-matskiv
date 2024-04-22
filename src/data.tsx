@@ -34,7 +34,14 @@ export const CHECK_AND_RADIO: CROptions[] = [
     input_Type: 'radio',
     name:'type',
     value:['NPC', 'Neural Network', 'Function'],
-  }
+  },
+  // {
+  //   label: '',
+  //   class_Name:  'radio-group',
+  //   input_Type: 'radio',
+  //   name:'type',
+  //   value:[],
+  // }
 ];
 export const RANGE: ROptions[] = [
     {

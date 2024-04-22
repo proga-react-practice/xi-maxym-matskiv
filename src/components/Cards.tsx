@@ -1,5 +1,4 @@
 export default function Cards({ submissions, onDelete }: { submissions: Submission[], onDelete: (index: number) => void }) {
-    
     return (
         <div className="cards-container">
             {submissions.map((submission, index) => {

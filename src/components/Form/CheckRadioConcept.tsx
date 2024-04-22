@@ -28,8 +28,7 @@ export default function CheckRadioConcept(props: CheckRadioConceptProps) {
   };
 
   const clearState = () => {
-    setCheckValue([]);
-    props.onChange([]);
+    // setCheckValue([]); //!!!!!!!!!!!!
   };
 
   return (
@@ -47,6 +46,7 @@ export default function CheckRadioConcept(props: CheckRadioConceptProps) {
           </React.Fragment>
         ))}
       </div>
+      {/* <button type="reset" onClick={clearState}>Clear</button> */}
     </div>
   )
 }

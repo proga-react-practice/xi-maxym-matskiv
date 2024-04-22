@@ -32,7 +32,10 @@ export default function Form({onSubmit}: {onSubmit: (data: { rangeValue: number,
             onSubmit({ rangeValue, checkValue });
         }
         else if (!isSelected || rangeValue === 0) {
+            console.log(rangeValue);
+            console.log(checkValue);
             setErrorMessage('Please select at least one option.');
+            
             return;
         }
 
@@ -42,6 +45,7 @@ export default function Form({onSubmit}: {onSubmit: (data: { rangeValue: number,
     }
     const handleClear = () => {
         setRangeValue(0);
+        setCheckValues([[],[],[]]) //!!!!!!!!!!!!
     };
     return (
         <div className="form-container">
@@ -52,7 +56,7 @@ export default function Form({onSubmit}: {onSubmit: (data: { rangeValue: number,
                 <CheckRadioConcept {...CHECK_AND_RADIO[1]} onChange={handleChange(1)}/>
                 <CheckRadioConcept {...CHECK_AND_RADIO[2]} onChange={handleChange(2)}/>
                 <RangeConcept {...RANGE[0]} value={rangeValue} onChange={setRangeValue}/>
-                    <button>Submit</button>
+                    <button type ="submit">Submit</button>
                     <button type ="reset"onClick={handleClear}>Clear</button>
             </section>
             </form>
