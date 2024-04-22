@@ -11,7 +11,6 @@ export default function Cards({ submissions, onDelete }: { submissions: Submissi
                     });
                     return acc;
                 }, {} as { [key: string]: string[] });
-
                 return (
                     <div key={index} className="card">
                         <table>

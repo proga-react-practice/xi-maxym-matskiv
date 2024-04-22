@@ -21,8 +21,7 @@ function App() {
             </div>
             </main>
         </section>
-      </div>
-        
+      </div>  
     </>
   )
 }
